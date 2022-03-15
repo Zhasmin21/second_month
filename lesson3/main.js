@@ -43,8 +43,6 @@ const user3 = {
 getFullName(user, 18);
 getFullName(user2,17);
 getFullName(user3,19);
-
-
 // console.log(user.first_name, user.last_name)
 // console.log(user2.first_name, user2.last_name)
 // console.log(user3.first_name, user3.last_name)
