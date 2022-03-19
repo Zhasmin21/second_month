@@ -51,6 +51,9 @@ var bestPeople = [
 
 // Первое не смогла
 
+let result = bestPeople.filter((bestPeople) => bestPeople.name[0] === 'S')
+console.log(result)
+
 let result2 = bestPeople.map(function({salary}) {
 	return salary / 100;
 });
