@@ -23,6 +23,3 @@ const obj2 = {
     key2: "value",
     key3: "value"
 }
-
-
-
