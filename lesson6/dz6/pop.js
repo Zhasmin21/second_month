@@ -27,31 +27,37 @@ console.log(obj2);
 // 3
 const pop = [];
 
-const input = document.getElementById('name')
+const name = document.getElementById('name')
 const button = document.getElementById('button')
 
 function render(){
     const mainDiv = document.createElement('div');
     mainDiv.setAttribute('class', 'pop');
     for (let i = 0; i < pop.length; i++){
+        if (i === 1){
+            break;
+        }
         const divList =document.createElement('div');
         divList.setAttribute('class', 'block');
         const p = document.createElement('p');
-        p.innerHTML = pop[i].text;
+        p.innerText = pop[i].text;
         divList.append(p);
         mainDiv.append(divList);
+
     }
 
     const form = document.querySelector('.home')
+
     document.querySelector('.pop').remove();
     form.append(mainDiv)
 }
+
+
 button.onclick = function () {
     const obj = {
         id: pop.length,
-        text: "Hello " + input.value
+        text: "Hello " + name.value + " :)"
     }
-    this.append(pop);
     pop.push(obj);
     render()
 }

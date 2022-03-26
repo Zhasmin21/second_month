@@ -1,14 +1,35 @@
 * {
     margin: 0;
     padding: 0;
-
+    background-color: #97d5f5;
 }
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.room {
 
 }
-
+#name {
+    width: 200px;
+    height: 200px;
+    margin-top: 80px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid  #000;
+    background-color: #e51d1d;
+}
+#button {
+    position: absolute;
+    width: 70px;
+    height: 45px;
+    border: 2px solid  #000;
+    margin: 35px 0 0 -100px;
+    border-radius: 50em 3em;
+    background-color: #36860d;
+}
+.block {
+    font-size: 20px;
+    margin-top: 65px;
+    margin-left: 20px;
+}
